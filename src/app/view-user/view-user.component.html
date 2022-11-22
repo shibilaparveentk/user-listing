@@ -1,0 +1,39 @@
+<!-- Product section-->
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <div class="col-md-6">
+        <img class="card-img-top mb-5 mb-md-0 w-75" src={{userdetails.image}} alt="no image" />
+      </div>
+      <div class="col-md-6">
+        <div class="small mb-1">
+          <b>ID : </b>{{userdetails.id}}
+        </div>
+        <h1 class="display-5 fw-bolder">{{userdetails.firstName}} {{userdetails.lastName}}</h1>
+        <div class="fs-5 mb-5">
+          <span>
+            <b>Age : </b>{{userdetails.age}}
+          </span> ,
+          <b>Gender :</b> {{userdetails.gender}}
+        </div>
+        <p class="lead">
+        <p>
+          <b>Email :</b> {{userdetails.email}}<br>
+          <b>Phone :</b> {{userdetails.phone}}<br>
+          <b>Username :</b> {{userdetails.username}}<br>
+          <b>Dob :</b> {{userdetails.birthDate}}<br>
+          <b>Bloodgroup :</b> {{userdetails.bloodGroup}}<br>
+          <b>Height :</b>{{userdetails.height}}
+          &nbsp;||&nbsp;<b>Weight :</b>{{userdetails.weight}}<br>
+          <b>Address :
+          </b>{{userdetails.address['address']}},{{userdetails.address['city']}},
+          {{userdetails.address['state']}},
+          {{userdetails.address['postalCode']}}<br>
+          <b>Job : </b>
+          {{userdetails.company['title']}},
+          {{userdetails.company['name']}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
